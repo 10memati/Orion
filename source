@@ -468,6 +468,13 @@ function OrionLib:MakeWindow(WindowConfig)
 	local Loaded = false
 	local UIHidden = false
 
+    local soundAssetId = "6104109944"
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://" .. soundAssetId
+sound.Parent = game.Workspace
+
+sound:Play()
+
 	WindowConfig = WindowConfig or {}
 	WindowConfig.Name = WindowConfig.Name or "Kvp Hub"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
