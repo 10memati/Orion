@@ -17,7 +17,7 @@ local OrionLib = {
 			Stroke = Color3.fromRGB(60, 60, 60),
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240, 240, 240),
-			TextDark = Color3.fromRGB(150, 150, 150)
+			TextDark = Color3.fromRGB(140, 135, 135)
 		}
 	},
 	SelectedTheme = "Default",
@@ -476,14 +476,14 @@ sound.Parent = game.Workspace
 sound:Play()
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "Kvp Hub"
+	WindowConfig.Name = WindowConfig.Name or "Kvp HUB"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "Kvp Hub"
+	WindowConfig.IntroText = WindowConfig.IntroText or "Kvp HUB"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
@@ -656,8 +656,8 @@ sound:Play()
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Kvp Hub Gizlendi",
-			Content = "Kvp Hub'ı yeniden açmak için LeftShift'e basın",
+			Name = "Kvp HUB Hidden",
+			Content = "Tap rightShift to reopen Kvp HUB",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
