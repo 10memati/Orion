@@ -476,14 +476,14 @@ sound.Parent = game.Workspace
 sound:Play()
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "Kvp HUB"
+	WindowConfig.Name = WindowConfig.Name or "KVP Hub"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "Kvp HUB"
+	WindowConfig.IntroText = WindowConfig.IntroText or "KVP Hub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
@@ -656,8 +656,8 @@ sound:Play()
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Kvp HUB Hidden",
-			Content = "Tap rightShift to reopen Kvp HUB",
+			Name = "KVP Hub Hidden",
+			Content = "Tap rightShift to reopen KVP Hub",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
